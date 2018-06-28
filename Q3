@@ -1,0 +1,23 @@
+#include <Stdio.h>
+float t, p;
+int q,c;
+
+void  main()
+{
+	printf("Do you want to continue [1-Continue/0-Stop]?");
+	scanf("%d", &c);
+	while (c == 1)
+	{
+		printf("Enter quantity:");
+		scanf_s("d", &q);
+		printf("Enter price:");
+		scanf_s("f", &p);
+		t = p * q;
+		printf("Quantity=%d/n", q);
+		printf("Price=%f/n", p);
+		printf("Payment=%f/n", t);
+		printf("D you want to continue[1-Continue/0-Stop]?");
+		scanf("d", &c);
+	
+	}
+}
